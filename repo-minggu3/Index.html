@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- ##################################################################################### -->
+<style>
+    .wrap {
+        color: floralwhite;
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+    
+    .wrap .data {
+        z-index: 1;
+        padding: 20px;
+        margin: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .wrap .data h1 {
+        text-align: center;
+        font-size: 70px;
+        font-family: sans-serif;
+        opacity: 0.7;
+    }
+    
+    .video {
+        position: absolute;
+        width: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+      
+    }
+    
+    .lapisan {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: darkslategray;
+        width: 100%;
+        height: 100vh;
+        opacity: 0.5;
+    }
+
+    audio{
+        /* z-index: 1; */
+        position: absolute;
+    }
+
+</style>
+<!-- ##################################################################################### -->
+<body>
+    <audio controls autoplay>
+        <source src="backsound.mp3" type="audio/mpeg">
+    </audio>
+    <div class="wrap">
+        <div class="data">
+            <h1>BIODATA</h1>
+
+            <table align="center" cellpedding="5" align="center" width="800">
+                <!-- <hr width="1000"> -->
+                <tr></tr><tr></tr><tr></tr>
+                <tr>
+                    <td>Nama</td>
+                    <td>: Muhammad Rakha' Naufal </td>
+                    <td rowspan="8" align="center"><img src="rakha 2 .jpg" width="200px"></td>
+                </tr>
+                <tr>
+                    <td>NIM</td>
+                    <td>: A11.2020.12788</td>
+                </tr>
+                <tr>
+                    <td>Tempat, Tanggal Lahir</td>
+                    <td>: Kudus, 1 April 2002</td>
+                   
+                </tr>
+                <tr>
+                    <td>Agama</td>
+                    <td>: Islam</td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>: Laki-laki</td>
+                </tr>
+                <tr>
+                    <td>Alamat</td>
+                    <td>: Jl. PR. Sukun, Gondosari, Gebog, Kudus</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>: 111202012788@mhs.dinus.ac.id</td>
+                </tr>
+                <tr>
+                    <td>No. Handphone</td>
+                    <td>: 085156272126</td>
+                </tr>
+                <tr></tr><tr></tr><tr></tr>
+            </table>
+
+        </div>
+
+        <div class="video">
+            <div class="lapisan"></div>
+            <video autoplay loop muted>
+                <source src="background.mp4" type="video/mp4">
+            </video>
+        </div>
+       
+    </div>
+</body>
+<!-- ##################################################################################### -->
+</html>
